@@ -89,8 +89,10 @@ export function BlockEditor({
             onBlur={handleBlur}
             onKeyDown={handleKeyDown}
             onClick={onSelect}
-            dangerouslySetInnerHTML={{ __html: content }}
-          />
+            dir="ltr"
+          >
+            {content}
+          </div>
         );
       case 'heading1':
         return (
@@ -103,8 +105,10 @@ export function BlockEditor({
             onBlur={handleBlur}
             onKeyDown={handleKeyDown}
             onClick={onSelect}
-            dangerouslySetInnerHTML={{ __html: content }}
-          />
+            dir="ltr"
+          >
+            {content}
+          </h1>
         );
       case 'heading2':
         return (
@@ -117,8 +121,10 @@ export function BlockEditor({
             onBlur={handleBlur}
             onKeyDown={handleKeyDown}
             onClick={onSelect}
-            dangerouslySetInnerHTML={{ __html: content }}
-          />
+            dir="ltr"
+          >
+            {content}
+          </h2>
         );
       case 'heading3':
         return (
@@ -131,8 +137,10 @@ export function BlockEditor({
             onBlur={handleBlur}
             onKeyDown={handleKeyDown}
             onClick={onSelect}
-            dangerouslySetInnerHTML={{ __html: content }}
-          />
+            dir="ltr"
+          >
+            {content}
+          </h3>
         );
       case 'bulletList':
         return (
@@ -147,8 +155,10 @@ export function BlockEditor({
               onBlur={handleBlur}
               onKeyDown={handleKeyDown}
               onClick={onSelect}
-              dangerouslySetInnerHTML={{ __html: content }}
-            />
+              dir="ltr"
+            >
+              {content}
+            </div>
           </div>
         );
       case 'numberedList':
@@ -164,8 +174,10 @@ export function BlockEditor({
               onBlur={handleBlur}
               onKeyDown={handleKeyDown}
               onClick={onSelect}
-              dangerouslySetInnerHTML={{ __html: content }}
-            />
+              dir="ltr"
+            >
+              {content}
+            </div>
           </div>
         );
       case 'todo':
@@ -188,8 +200,10 @@ export function BlockEditor({
               onBlur={handleBlur}
               onKeyDown={handleKeyDown}
               onClick={onSelect}
-              dangerouslySetInnerHTML={{ __html: content }}
-            />
+              dir="ltr"
+            >
+              {content}
+            </div>
           </div>
         );
       case 'quote':
@@ -204,8 +218,10 @@ export function BlockEditor({
               onBlur={handleBlur}
               onKeyDown={handleKeyDown}
               onClick={onSelect}
-              dangerouslySetInnerHTML={{ __html: content }}
-            />
+              dir="ltr"
+            >
+              {content}
+            </div>
           </blockquote>
         );
       case 'divider':
@@ -232,8 +248,10 @@ export function BlockEditor({
               onInput={handleContentChange}
               onBlur={handleBlur}
               onClick={onSelect}
-              dangerouslySetInnerHTML={{ __html: content || 'Add caption...' }}
-            />
+              dir="ltr"
+            >
+              {content || 'Add caption...'}
+            </div>
           </div>
         );
       default:
